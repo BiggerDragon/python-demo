@@ -22,10 +22,10 @@ class ScoreTool(Tool):
     """
     Score tool is sub class of Tool
     """
-    score_tool_attrs = ["total_score", "max_score", "min_score"]
+    score_tool_attrs_keys = ["total_score", "max_score", "min_score"]
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        for key in self.score_tool_attrs:
+        for key in self.score_tool_attrs_keys:
             self.tool_attrs[key] = kwargs[key]
     
     def print_attrs(self):
