@@ -1,0 +1,3 @@
+read and write and don't truncate 
+but from beginning!end!read and write and don't truncate
+  initial position end!

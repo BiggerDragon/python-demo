@@ -1,0 +1,4 @@
+write and don't truncate the file.
+write from the beginning of the file!
+Test for open("config/log2.txt", "w")
+write and also truncate file?

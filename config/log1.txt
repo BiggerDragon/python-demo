@@ -1,0 +1,3 @@
+Log1.txt test for open("file", "r")
+Output these lines in the console!
+end!
