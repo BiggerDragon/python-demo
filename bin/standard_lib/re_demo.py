@@ -20,10 +20,42 @@ if mo is not None:
     print(mo.group())
 
 mo = re.fullmatch(reg, "Happy coding!斗破苍穹")
-print("full mathced" if mo is not None else "not full macthed")
+print("full mathced" if mo is not None else "not full matched")
 
 mo =re.fullmatch(reg, "Happy coding!斗破苍穹,I will fight the sky broken!")
-print("full matched" if mo is not None else "not full mathed!")
+print("full matched" if mo is not None else "not full matched!")
+
+so = re.search("engine", "Car engine is the heart of it")
+print(so.group() if so is not None else "not searched!")
+
+s = re.sub("name", "大龙", "name is name")
+print(s)
+
+sn = re.subn("name", "small dragon", "name is name")
+print(sn)
+
+split_result = re.split(",", "Dog,Cat,Pig,Dragon,Duck")
+print(split_result)
+
+find_result = re.findall("Alien", "Alien comes from M78, Alien has no brain! alien eats people!")
+print(type(find_result), find_result)
+
+find_iter_result = re.finditer("Alien", "Alien comes from M78, Alien has no brain! alien eats people!", flags=0)
+print(type(find_iter_result))
+for x in find_iter_result:
+    print(x.group())
+
+
+reg = "[a-zA-z0-9_]"
+print(type(reg))
+print(type(re.compile(reg)))
+re.purge()
+
+
+
+
+
+
 
 
 
